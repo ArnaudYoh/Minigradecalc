@@ -22,8 +22,21 @@ var calculate = function(count){
 	 	results[i]= (results[i] - weightedGrades)/((100-totpercent)*0.01); 
 	 }; 
 	console.log(results); 
-	
-	
+	for (var i = 1; i < 9; i++) {
+		var tomodify = $('td[name=result'+i+']');
+		if (results[i-1]>100 ){
+			tomodify.html("I'm sorry");
+		}
+		else { 
+			if (results[i-1]<0) {
+				tomodify.html("0% hehe :D"); 
+			}
+			else 
+				{ tomodify.html(results[i-1] + '%'); 
+			};
+		}; 
+		
+	};
 }
 
 var main = function(){

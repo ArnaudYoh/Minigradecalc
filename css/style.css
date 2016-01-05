@@ -33,6 +33,15 @@ th, tr, td {
 	color: white; 
 }
 
+.HowTo p {
+	margin-top: 2%;
+	margin-left: 10%; 
+	margin-right: 10%;  
+	font-family: 'Raleway'; 
+	font-size: 20px; 
+	color: red; 
+}
+
 .box1 td, th {
 	text-align: center;
 }
